@@ -1,0 +1,75 @@
+#include <iostream>
+using namespace std;
+
+//class Calculator defination 
+class Calculator {
+private:
+    double num1, num2;
+
+public:
+    //  input function
+    void getInput() {
+        cout << "Enter first number: ";
+        cin >> num1;
+        cout << "Enter second number: ";
+        cin >> num2;
+    }
+
+    // Addition
+    void add() {
+        cout << "Result: " << (num1 + num2) << endl;
+    }
+
+    // Subtraction
+    void subtract() {
+        cout << "Result: " << (num1 - num2) << endl;
+    }
+
+    // Division
+    void divide() {
+        if (num2 != 0)
+            cout << "Result: " << (num1 / num2) << endl;
+        else
+            cout << "Error: Division by zero is not allowed." << endl;
+    }
+};
+
+// Main function with menu
+int main() {
+    Calculator obj;
+    int choice;
+
+    do {
+        cout << "\n Calculator Menu\n";
+        cout << "1. Add (+)\n";
+        cout << "2. Subtract (-)\n";
+        cout << "3. Divide (/)\n";
+        cout << "4. Exit\n";
+        cout << "Choose an operation (1-4): ";
+        cin >> choice;
+
+        if (choice >= 1 && choice <= 3) {
+            obj.getInput(); // Get numbers before performing operation
+        }
+        switch (choice) {
+            case 1:
+                obj.add();
+                break;
+            case 2:
+                obj.subtract();
+                break;
+            case 3:
+                obj.divide();
+                break;
+            case 4:
+                cout << "Exiting!\n";
+                break;
+            default:
+                cout << "Invalid choice. Please enter 1-4.\n";
+        }
+
+    } while (choice != 4);
+
+    return 0;
+}
+
