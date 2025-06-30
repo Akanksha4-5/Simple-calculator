@@ -73,3 +73,45 @@ int main() {
     return 0;
 }
 
+//output:
+Calculator Menu
+1. Add (+)
+2. Subtract (-)
+3. Divide (/)
+4. Exit
+Choose an operation (1-4): 1
+Enter first number: 23
+Enter second number: 45
+Result: 68
+
+ Calculator Menu
+1. Add (+)
+2. Subtract (-)
+3. Divide (/)
+4. Exit
+Choose an operation (1-4): 2
+Enter first number: 56
+Enter second number: 43
+Result: 13
+
+ Calculator Menu
+1. Add (+)
+2. Subtract (-)
+3. Divide (/)
+4. Exit
+Choose an operation (1-4): 3
+Enter first number: 45
+Enter second number: ERROR!
+0
+Error: Division by zero is not allowed.
+
+ Calculator Menu
+1. Add (+)
+2. Subtract (-)
+3. Divide (/)
+4. Exit
+Choose an operation (1-4): 4
+Exiting!
+
+
+=== Code Execution Successful ===//
